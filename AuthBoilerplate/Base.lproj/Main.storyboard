@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w74-wX-735">
-                                <rect key="frame" x="16" y="525" width="361" height="37"/>
+                                <rect key="frame" x="16" y="532" width="361" height="37"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kakao Login" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background">
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-6i-CKz">
-                                <rect key="frame" x="16" y="586" width="361" height="37"/>
+                                <rect key="frame" x="16" y="593" width="361" height="37"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Google Login" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background">
@@ -43,16 +43,32 @@
                                     <action selector="googleLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxZ-Ia-hgb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQB-vW-FQv">
+                                <rect key="frame" x="16" y="666" width="361" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmj-i7-QoJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQB-vW-FQv" secondAttribute="trailing" constant="16" id="6TF-I9-SX3"/>
                             <constraint firstItem="sbo-6i-CKz" firstAttribute="top" secondItem="w74-wX-735" secondAttribute="bottom" constant="24" id="LRS-ic-9V0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sbo-6i-CKz" secondAttribute="trailing" constant="16" id="Y4X-1F-SHO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w74-wX-735" secondAttribute="trailing" constant="16" id="cAg-XA-xAp"/>
+                            <constraint firstItem="dQB-vW-FQv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ec5-oh-1MN"/>
+                            <constraint firstItem="dQB-vW-FQv" firstAttribute="top" secondItem="sbo-6i-CKz" secondAttribute="bottom" constant="36" id="l9B-7y-Wvk"/>
                             <constraint firstItem="w74-wX-735" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oAB-dQ-AVb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sbo-6i-CKz" secondAttribute="bottom" constant="195" id="pUL-hB-Tmq"/>
                             <constraint firstItem="sbo-6i-CKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wSn-vs-Lnk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQB-vW-FQv" secondAttribute="bottom" constant="115" id="wxk-S1-PNE"/>
                         </constraints>
                     </view>
                     <connections>
