@@ -19,6 +19,9 @@
 		18BCADDB2B5C1B4300BF215B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */; };
 		18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADE42B5C1E2C00BF215B /* APIKEY.swift */; };
 		18D1C7F02B5F9C4E0013E424 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */; };
+		18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */; };
+		18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */; };
+		18D1C7FB2B5FE0420013E424 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7FA2B5FE0420013E424 /* Auth.swift */; };
 		18E2438A2B5EB43700B5A768 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 18E243892B5EB43700B5A768 /* GoogleSignIn */; };
 		18E2438C2B5EB43700B5A768 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18E2438B2B5EB43700B5A768 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
@@ -34,6 +37,9 @@
 		18BCADDC2B5C1B4300BF215B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BCADE42B5C1E2C00BF215B /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
 		18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
+		18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		18D1C7FA2B5FE0420013E424 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		18BCADCD2B5C1B4100BF215B /* AuthBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				18D1C8002B60139E0013E424 /* Auth */,
 				18BCADCE2B5C1B4100BF215B /* AppDelegate.swift */,
 				18BCADD02B5C1B4100BF215B /* SceneDelegate.swift */,
 				18BCADD22B5C1B4100BF215B /* ViewController.swift */,
@@ -80,9 +87,19 @@
 				18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */,
 				18BCADDC2B5C1B4300BF215B /* Info.plist */,
 				18BCADE42B5C1E2C00BF215B /* APIKEY.swift */,
-				18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */,
 			);
 			path = AuthBoilerplate;
+			sourceTree = "<group>";
+		};
+		18D1C8002B60139E0013E424 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				18D1C7FA2B5FE0420013E424 /* Auth.swift */,
+				18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */,
+				18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */,
+				18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +188,11 @@
 				18BCADD32B5C1B4100BF215B /* ViewController.swift in Sources */,
 				18BCADCF2B5C1B4100BF215B /* AppDelegate.swift in Sources */,
 				18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */,
+				18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */,
+				18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */,
 				18BCADD12B5C1B4100BF215B /* SceneDelegate.swift in Sources */,
 				18D1C7F02B5F9C4E0013E424 /* AuthManager.swift in Sources */,
+				18D1C7FB2B5FE0420013E424 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
