@@ -10,19 +10,19 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var kakaoLoginButton: UIButton!
-    @IBOutlet weak var GoogleLoginButton: UIButton!
+    @IBOutlet weak var googleLoginButton: UIButton!
     
-    private lazy var authManager: AuthManager = AuthManager(presenting: self)
+    private lazy var authManager: AuthManager = AuthManager(auth: KakaoAuth(nextAuth: GoogleAuth(presenting: self)))
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func kakaoLoginClick(_ sender: Any) {
-        authManager.kakaoLogin()
+        authManager.login(.kakao)
     }
     @IBAction func googleLoginClick(_ sender: Any) {
-        authManager.googleLogin()
+        authManager.login(.google)
     }
     @IBAction func logoutClick(_ sender: Any) {
         authManager.logout()
