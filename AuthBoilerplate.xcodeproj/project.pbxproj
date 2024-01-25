@@ -13,7 +13,6 @@
 		18BCADD62B5C1B4100BF215B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD42B5C1B4100BF215B /* Main.storyboard */; };
 		18BCADD82B5C1B4300BF215B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD72B5C1B4300BF215B /* Assets.xcassets */; };
 		18BCADDB2B5C1B4300BF215B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */; };
-		18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADE42B5C1E2C00BF215B /* APIKEY.swift */; };
 		18D1C7F02B5F9C4E0013E424 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */; };
 		18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */; };
 		18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */; };
@@ -29,7 +28,6 @@
 		18BCADD72B5C1B4300BF215B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BCADDA2B5C1B4300BF215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BCADDC2B5C1B4300BF215B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18BCADE42B5C1E2C00BF215B /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
 		18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				18BCADD72B5C1B4300BF215B /* Assets.xcassets */,
 				18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */,
 				18BCADDC2B5C1B4300BF215B /* Info.plist */,
-				18BCADE42B5C1E2C00BF215B /* APIKEY.swift */,
 			);
 			path = AuthBoilerplate;
 			sourceTree = "<group>";
@@ -167,7 +164,6 @@
 			files = (
 				18BCADD32B5C1B4100BF215B /* ViewController.swift in Sources */,
 				18BCADCF2B5C1B4100BF215B /* AppDelegate.swift in Sources */,
-				18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */,
 				18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */,
 				18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */,
 				18BCADD12B5C1B4100BF215B /* SceneDelegate.swift in Sources */,
