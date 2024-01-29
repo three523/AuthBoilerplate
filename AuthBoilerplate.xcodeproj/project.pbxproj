@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184CCAD52B64FE8800126397 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCAD42B64FE8800126397 /* KakaoSDKAuth */; };
+		184CCAD72B64FE8800126397 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCAD62B64FE8800126397 /* KakaoSDKCommon */; };
+		184CCAD92B64FE8800126397 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCAD82B64FE8800126397 /* KakaoSDKTalk */; };
+		184CCADB2B64FE8800126397 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCADA2B64FE8800126397 /* KakaoSDKUser */; };
+		184CCADE2B64FEA700126397 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCADD2B64FEA700126397 /* GoogleSignIn */; };
+		184CCAE02B64FEA700126397 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 184CCADF2B64FEA700126397 /* GoogleSignInSwift */; };
 		18BCADCF2B5C1B4100BF215B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADCE2B5C1B4100BF215B /* AppDelegate.swift */; };
 		18BCADD12B5C1B4100BF215B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADD02B5C1B4100BF215B /* SceneDelegate.swift */; };
 		18BCADD32B5C1B4100BF215B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADD22B5C1B4100BF215B /* ViewController.swift */; };
 		18BCADD62B5C1B4100BF215B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD42B5C1B4100BF215B /* Main.storyboard */; };
 		18BCADD82B5C1B4300BF215B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD72B5C1B4300BF215B /* Assets.xcassets */; };
 		18BCADDB2B5C1B4300BF215B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */; };
-		18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCADE42B5C1E2C00BF215B /* APIKEY.swift */; };
 		18D1C7F02B5F9C4E0013E424 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */; };
 		18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */; };
 		18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */; };
@@ -29,7 +34,6 @@
 		18BCADD72B5C1B4300BF215B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BCADDA2B5C1B4300BF215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BCADDC2B5C1B4300BF215B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18BCADE42B5C1E2C00BF215B /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
 		18D1C7EF2B5F9C4E0013E424 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		18D1C7F62B5FE0340013E424 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		18D1C7F82B5FE03B0013E424 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
@@ -41,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184CCADE2B64FEA700126397 /* GoogleSignIn in Frameworks */,
+				184CCADB2B64FE8800126397 /* KakaoSDKUser in Frameworks */,
+				184CCAD92B64FE8800126397 /* KakaoSDKTalk in Frameworks */,
+				184CCAE02B64FEA700126397 /* GoogleSignInSwift in Frameworks */,
+				184CCAD72B64FE8800126397 /* KakaoSDKCommon in Frameworks */,
+				184CCAD52B64FE8800126397 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +84,6 @@
 				18BCADD72B5C1B4300BF215B /* Assets.xcassets */,
 				18BCADD92B5C1B4300BF215B /* LaunchScreen.storyboard */,
 				18BCADDC2B5C1B4300BF215B /* Info.plist */,
-				18BCADE42B5C1E2C00BF215B /* APIKEY.swift */,
 			);
 			path = AuthBoilerplate;
 			sourceTree = "<group>";
@@ -107,6 +116,12 @@
 			);
 			name = AuthBoilerplate;
 			packageProductDependencies = (
+				184CCAD42B64FE8800126397 /* KakaoSDKAuth */,
+				184CCAD62B64FE8800126397 /* KakaoSDKCommon */,
+				184CCAD82B64FE8800126397 /* KakaoSDKTalk */,
+				184CCADA2B64FE8800126397 /* KakaoSDKUser */,
+				184CCADD2B64FEA700126397 /* GoogleSignIn */,
+				184CCADF2B64FEA700126397 /* GoogleSignInSwift */,
 			);
 			productName = AuthBoilerplate;
 			productReference = 18BCADCB2B5C1B4100BF215B /* AuthBoilerplate.app */;
@@ -137,6 +152,8 @@
 			);
 			mainGroup = 18BCADC22B5C1B4100BF215B;
 			packageReferences = (
+				184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				184CCADC2B64FEA700126397 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 18BCADCC2B5C1B4100BF215B /* Products */;
 			projectDirPath = "";
@@ -167,7 +184,6 @@
 			files = (
 				18BCADD32B5C1B4100BF215B /* ViewController.swift in Sources */,
 				18BCADCF2B5C1B4100BF215B /* AppDelegate.swift in Sources */,
-				18BCADE52B5C1E2C00BF215B /* APIKEY.swift in Sources */,
 				18D1C7F72B5FE0340013E424 /* KakaoAuth.swift in Sources */,
 				18D1C7F92B5FE03B0013E424 /* GoogleAuth.swift in Sources */,
 				18BCADD12B5C1B4100BF215B /* SceneDelegate.swift in Sources */,
@@ -392,6 +408,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		184CCADC2B64FEA700126397 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184CCAD42B64FE8800126397 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		184CCAD62B64FE8800126397 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		184CCAD82B64FE8800126397 /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		184CCADA2B64FE8800126397 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCAD32B64FE8800126397 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		184CCADD2B64FEA700126397 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCADC2B64FEA700126397 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		184CCADF2B64FEA700126397 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184CCADC2B64FEA700126397 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18BCADC32B5C1B4100BF215B /* Project object */;
 }
