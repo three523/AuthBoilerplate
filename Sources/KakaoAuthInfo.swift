@@ -10,14 +10,14 @@ import Foundation
 struct KakaoAuthInfo: AuthInfo {
     
     func setup(plistDict: NSMutableDictionary) -> NSMutableDictionary {
-//        while true {
-//            var newPlistDict = addQueriesSchemes(plistDict: plistDict)
-//            print("iOS URL 스키마를 입력해주세요")
-//            guard let urlScheme = readLine() else { continue }
-//            newPlistDict = addURLTypes(plistDict: newPlistDict, urlScheme: urlScheme)
-//            break
-//        }
-        insertKakaoInitCode()
+        while true {
+            var newPlistDict = addQueriesSchemes(plistDict: plistDict)
+            print("[카카오] 네이티브 앱키를 입력해주세요")
+            guard let appkey = readLine() else { continue }
+            createFile(apikey: ["KAKAO_APIKEY": appkey])
+            newPlistDict = addURLTypes(plistDict: newPlistDict, urlScheme: appkey)
+            break
+        }
         return plistDict
     }
     
@@ -57,22 +57,5 @@ struct KakaoAuthInfo: AuthInfo {
             newPlistDict["LSApplicationQueriesSchemes"] = queries
         }
         return newPlistDict
-    }
-    
-    private func insertKakaoInitCode() {
-        print("KakaoSDK를 생성하기 위한 네이티브앱 키를 입력해주세요")
-        guard let nativeAppKey = readLine() else { return }
-        let code = "let NATIVEAPPKEY = \(nativeAppKey)"
-        
-        let defaultPath = FileManager.default.currentDirectoryPath
-        let projectName = URL(fileURLWithPath: defaultPath).lastPathComponent
-        let apikeyFilePath = defaultPath + "/\(projectName)/APIKEY.swift"
-        let appdelegateFilePath = defaultPath + "/\(projectName)/Appdelegate.swift"
-
-        insertCodeIntoFile(filePath: appdelegateFilePath, keyword: "[UIApplication.LaunchOptionsKey: Any]?) -> Bool {", codeToInsert: "\n\t\tKakaoSDK.initSDK(appkey: NATIVEAPPKEY)", insertPosition: .back)
-        
-        insertCodeIntoFile(filePath: appdelegateFilePath, keyword: "UIKit", codeToInsert: "\nimport KakaoSDKCommon", insertPosition: .back)
-        
-        insertCodeAtLine(filePath: apikeyFilePath, lineNumber: 1, codeToInsert: code)
     }
 }
