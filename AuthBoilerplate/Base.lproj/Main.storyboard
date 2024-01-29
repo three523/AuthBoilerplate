@@ -16,110 +16,13 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w74-wX-735">
-                                <rect key="frame" x="16" y="532" width="361" height="37"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Kakao Login" cornerStyle="dynamic">
-                                    <backgroundConfiguration key="background">
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="kakaoLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVz-kA-EHK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-6i-CKz">
-                                <rect key="frame" x="16" y="593" width="361" height="37"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Google Login" cornerStyle="dynamic">
-                                    <backgroundConfiguration key="background">
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="googleLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxZ-Ia-hgb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQB-vW-FQv">
-                                <rect key="frame" x="16" y="666" width="361" height="37"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout" cornerStyle="dynamic">
-                                    <backgroundConfiguration key="background">
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="logoutClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmj-i7-QoJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQB-vW-FQv" secondAttribute="trailing" constant="16" id="6TF-I9-SX3"/>
-                            <constraint firstItem="sbo-6i-CKz" firstAttribute="top" secondItem="w74-wX-735" secondAttribute="bottom" constant="24" id="LRS-ic-9V0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sbo-6i-CKz" secondAttribute="trailing" constant="16" id="Y4X-1F-SHO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w74-wX-735" secondAttribute="trailing" constant="16" id="cAg-XA-xAp"/>
-                            <constraint firstItem="dQB-vW-FQv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ec5-oh-1MN"/>
-                            <constraint firstItem="dQB-vW-FQv" firstAttribute="top" secondItem="sbo-6i-CKz" secondAttribute="bottom" constant="36" id="l9B-7y-Wvk"/>
-                            <constraint firstItem="w74-wX-735" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oAB-dQ-AVb"/>
-                            <constraint firstItem="sbo-6i-CKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wSn-vs-Lnk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQB-vW-FQv" secondAttribute="bottom" constant="115" id="wxk-S1-PNE"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="GoogleLoginButton" destination="sbo-6i-CKz" id="IrR-BK-Ksx"/>
-                        <outlet property="kakaoLoginButton" destination="w74-wX-735" id="ZUj-i3-lP6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
-        </scene>
-        <!--Nick Name Add View Controller-->
-        <scene sceneID="svt-Xa-g0N">
-            <objects>
-                <viewController restorationIdentifier="NickNameAddViewController" storyboardIdentifier="NickNameAddViewController" id="9pq-Mt-QYF" customClass="NickNameAddViewController" customModule="AuthBoilerplate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="D2H-M3-Nso">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MsY-Aj-pVu">
-                                <rect key="frame" x="16" y="83" width="361" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0X-yq-FT9">
-                                <rect key="frame" x="20" y="767" width="353" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
-                                <connections>
-                                    <action selector="signUpClick:" destination="9pq-Mt-QYF" eventType="touchUpInside" id="HAa-Zf-kpY"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="KoG-Ol-oJT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="R0X-yq-FT9" firstAttribute="leading" secondItem="KoG-Ol-oJT" secondAttribute="leading" constant="20" id="Z0Z-Qd-Aua"/>
-                            <constraint firstItem="KoG-Ol-oJT" firstAttribute="bottom" secondItem="R0X-yq-FT9" secondAttribute="bottom" constant="16" id="mnM-TC-JIr"/>
-                            <constraint firstItem="KoG-Ol-oJT" firstAttribute="trailing" secondItem="R0X-yq-FT9" secondAttribute="trailing" constant="20" id="mtq-3F-0qg"/>
-                            <constraint firstItem="KoG-Ol-oJT" firstAttribute="trailing" secondItem="MsY-Aj-pVu" secondAttribute="trailing" constant="16" id="pPT-7D-TCR"/>
-                            <constraint firstItem="MsY-Aj-pVu" firstAttribute="leading" secondItem="KoG-Ol-oJT" secondAttribute="leading" constant="16" id="pt2-9D-wmk"/>
-                            <constraint firstItem="MsY-Aj-pVu" firstAttribute="top" secondItem="KoG-Ol-oJT" secondAttribute="top" constant="24" id="yUg-w9-Syd"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="nickNameTextField" destination="MsY-Aj-pVu" id="Hkc-2g-AYt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hgh-VR-RIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1095" y="4"/>
         </scene>
     </scenes>
     <resources>
