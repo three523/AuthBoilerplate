@@ -51,13 +51,8 @@ class myApp {
 
         let infoSetup: InfoSetup = InfoSetup(plistDict: plistDict)
 
-        if let kakaoAnswer = prompt(message: "카카오 로그인 기능이 필요한가요? (y|n)"),
-            kakaoAnswer == "y" || kakaoAnswer == "Y" || kakaoAnswer == "ㅛ" {
-            infoSetup.kakao()
-        } else if let googleAnswer = prompt(message: "구글 로그인 기능이 필요한가요?"),
-            googleAnswer == "y" || googleAnswer == "Y" || googleAnswer == "ㅛ" { 
-            infoSetup.google()
-        }
+        infoSetup.kakao()
+        infoSetup.google()
 
         let newPlistDict = infoSetup.create()
 
