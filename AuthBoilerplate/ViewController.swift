@@ -15,4 +15,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func kakaoLogin(_ sender: Any) {
+        authManager.login(.kakao)
+    }
+    
+    @IBAction func googleLogin(_ sender: Any) {
+        authManager.login(.google)
+    }
+    
+    @IBAction func logout(_ sender: Any) {
+        authManager.logout()
+    }
 }
